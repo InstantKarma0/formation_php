@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: 'Manrope', sans-serif;
+}
+
+.formBody {
+  background: #F0F0F0;
+}
+
+
+.formBox {
+  background: #fff;
+  position: absolute;
+  width: 350px;
+  height: 400px;
+  left: 50%;
+  top: 45%;
+  transform: translate(-50%, -50%);
+  padding: 40px;
+  box-shadow: 0 10px 30px rgba(5, 5, 5, .1);
+  border-radius: 10px;
+}
+
+form {
+  margin: auto 0;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  height: 100%;
+}
+
+.user-box {
+  position: relative;
+}
+
+
+.user-box input {
+  background: transparent;
+  padding: 10px 0;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid rgb(173, 164, 151);
+  color: rgb(72,117, 158);
+  margin-bottom: 30px;
+  font-size: 16px;
+  outline: none;
+}
+
+input:focus ~ label, input:empty ~  label {
+  top: -15px;
+  left: 0;
+  font-size: 12px;
+  color: rgba(72, 117, 158, 1)
+}
+
+.checkAge:invalid {
+    border-bottom: 2px solid rgb(207, 0, 0);
+}
+
+label {
+  position: absolute;
+  left: 0;
+  top: 5px;
+  transition: .4s;
+  color: rgb(72, 117, 158);
+}
+
+h2 {
+  color: rgb(72, 117, 158);
+  font-weight: 500;
+  margin-bottom: 20px;
+  text-align: center;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+h3 {
+  color: rgb(72, 117, 158);
+  font-weight: 500;
+  margin-bottom: 20px;
+  letter-spacing: 3px;
+}
+
+select {
+  width: 100%;
+  height: 30px;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid rgb(173, 164, 151);
+  color: rgb(72, 117, 158);
+}
+
+option {
+  background-color: #F0F0F0;
+  color: rgb(72, 117, 158);
+  border-bottom: 2px solid rgb(173, 164, 151);
+}
+
+select option:hover {
+  box-shadow: 0 0 10px 100px #48759E inset;
+  color: #F0F0F0;
+}
+
+.button-box {
+  width: 100%;
+  position: absolute;
+  bottom: 40px;
+  right: 0px;
+  text-align: center;
+}
+
+.button-box input {
+  background: rgba(72, 117, 158, 0.7);
+  font-size: 16px;
+  color: #fff;
+  border: 2px solid rgba(72, 117, 158, 0);
+  cursor: pointer;
+  height: 45px;
+  width: 150px;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  border-radius: 3px;
+}
+
+.button-box input:hover {
+  border: 2px solid rgba(72, 117, 158, 1);
+  color: rgb(72, 117, 158);
+  background: transparent;
+  transform: scale(1.05);
+}
+
+a {
+    color: rgba(255, 0, 0, 0.5);
+    text-decoration: none;
+    text-align: center;
+}
